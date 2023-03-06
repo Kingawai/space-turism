@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crew</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/crew.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="24" cy="24" r="24" fill="#FFF" />
+            <path
+              fill="#0B0D17"
+              d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+            />
+          </g>
+        </svg>
+      </div>
+      <hr class="line header__line" />
+      <nav class="header__nav">
+        <ul class="nav__list underlined-list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link"
+              ><span class="nav__num">00</span>Home</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link"
+              ><span class="nav__num">01 </span>Destination</a
+            >
+          </li>
+          <li class="nav__item active">
+            <a href="./crew.html" class="nav__link"
+              ><span class="nav__num">02</span>Crew</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link"
+              ><span class="nav__num">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </header>
+
+    <main class="main">
+      <h1 class="main__title"><span> 02</span>Meet your crew</h1>
+      <section class="swiper">
+        <ul class="crew-members swiper-wrapper">
+          <li class="crew-member swiper-slide">
+            <article>
+              <h4 class="role">Commander</h4>
+              <h3 class="name">Douglas Hurley</h3>
+              <p class="bio">
+                Douglas Gerald Hurley is an American engineer, former Marine
+                Corps pilot and former NASA astronaut. He launched into space
+                for the third time as commander of Crew Dragon Demo-2.
+              </p>
+            </article>
+            <img src="./assets/crew/image-douglas-hurley.png" alt="" />
+          </li>
+
+          <li class="crew-member swiper-slide">
+            <article>
+              <h4 class="role">Commander</h4>
+              <h3 class="name">Douglas Hurley</h3>
+              <p class="bio">
+                Douglas Gerald Hurley is an American engineer, former Marine
+                Corps pilot and former NASA astronaut. He launched into space
+                for the third time as commander of Crew Dragon Demo-2.
+              </p>
+            </article>
+            <img src="./assets/crew/image-mark-shuttleworth.png" alt="" />
+          </li>
+
+          <li class="crew-member swiper-slide">
+            <article>
+              <h4 class="role">Commander</h4>
+              <h3 class="name">Douglas Hurley</h3>
+              <p class="bio">
+                Douglas Gerald Hurley is an American engineer, former Marine
+                Corps pilot and former NASA astronaut. He launched into space
+                for the third time as commander of Crew Dragon Demo-2.
+              </p>
+            </article>
+            <img src="./assets/crew/image-victor-glover.png" alt="" />
+          </li>
+
+          <li class="crew-member swiper-slide">
+            <article>
+              <h4 class="role">Commander</h4>
+              <h3 class="name">Douglas Hurley</h3>
+              <p class="bio">
+                Douglas Gerald Hurley is an American engineer, former Marine
+                Corps pilot and former NASA astronaut. He launched into space
+                for the third time as commander of Crew Dragon Demo-2.
+              </p>
+            </article>
+            <img src="./assets/crew/image-anousheh-ansari.png" alt="" />
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        autoplay: {
+          delay: 2000,
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
